@@ -1,0 +1,10 @@
+def mul(a,b):
+    m=0
+    while a:
+        if a%2==1:
+            m=m+a
+    a=a//2
+    b=b*2
+    return m
+a,b=map(int,input().split())
+print(mul(a,b))
