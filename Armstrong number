@@ -1,0 +1,20 @@
+def armstrong(num):
+    temp=num
+    dc=0
+    while num:
+        r=num%10
+        num=num//10
+        dc+=1
+    res=0
+    num=temp
+    while num:
+        r=num%10
+        num=num//10
+        res=res+pow(r,dc)
+    if temp==res:
+        return True
+    else:
+        return False
+        
+num=int(input())
+print(armstrong(num))
